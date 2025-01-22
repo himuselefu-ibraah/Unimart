@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Form</title>
+  <style>
+
+    body{
+      font-family: Arial,sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to right,#6a11cb,#2575fc);
+    }
+    .container{
+      display: flex;
+      width: 60%;
+      max-width: 800px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .left{
+      flex: 1;
+      background-color: #00bcd4;
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+    .left h2{
+      margin-bottom: 20px;
+    }
+    .left p{
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+    .right{
+      flex: 1;
+      background-color: white;
+      padding: 20px;
+    }
+    .form-group label{
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .form-group input,
+    .form-group textarea{
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .form-group textarea{
+      resize: none;
+      height: 80px;
+    }
+    .submit-btn:hover{
+      background-color: #008c9e;
+    }
+
+  </style>
+  
+</head>
+<body>
+
+<div class="container">
+<div class="left">
+  <h2>Let's Chat</h2>
+<p>Whether you have a question, want to start a project,or simply want to connect.</p>
+<p>Feel free to send me a mwssage in the contact form</p>
+
+</div>
+<div class="right">
+<form>
+<div class="form-group">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" required>
+
+</div>
+<div class="form-group">
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" required>
+</div>
+<div class="form-group">
+  <label for="company">Company</label>
+  <input type="text" id="company">
+  </div>
+  <div class="form-group">
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone">
+  </div>
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+  </div>
+  <button type="submit" class="submit-btn">Submit</button>
+  </form>
+</div>
+</div>
+
+</body>
+</html>
